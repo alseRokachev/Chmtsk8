@@ -8,8 +8,9 @@
 
 int[,] createArray()
 {
+    Random rand = new Random();
     int[,] array = new int[4, 4];
-    int counter = 1;
+    int counter = rand.Next(0,50);
     for (int i = 0; i < 4; i++)
     {
         array[0, i] = counter++;
